@@ -36,15 +36,34 @@ function renderBullets(items) {
   return `<ul>${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`;
 }
 
-function renderItem(item) {
+function renderItem(item, sectionId) {
+  const dateText =
+    sectionId === "education" && typeof item.startDate === "string" && typeof item.endDate === "string"
+      ? `${item.startDate} - ${item.endDate}`
+      : item.date;
+  const projectLinks =
+    sectionId === "projects" && Array.isArray(item.links) && item.links.length > 0
+      ? `
+          <div class="project-links">
+            ${item.links
+              .map(
+                (link) =>
+                  `<a class="project-link" href="${escapeAttribute(link.href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a>`,
+              )
+              .join("")}
+          </div>
+        `
+      : "";
+
   return `
     <div class="item">
       <div class="item-head">
         <div>
           <h3 class="item-title">${escapeHtml(item.title)}</h3>
           <p class="item-subtitle">${escapeHtml(item.subtitle)}</p>
+          ${projectLinks}
         </div>
-        <div class="item-date">${escapeHtml(item.date)}</div>
+        <div class="item-date">${escapeHtml(dateText || "")}</div>
       </div>
       ${renderBullets(item.bullets)}
     </div>
@@ -55,7 +74,7 @@ function renderSection(sectionId, section) {
   return `
     <section id="${escapeAttribute(sectionId)}">
       <h2 class="section-title">${escapeHtml(section.title)}</h2>
-      ${section.items.map(renderItem).join("")}
+      ${section.items.map((item) => renderItem(item, sectionId)).join("")}
     </section>
   `;
 }
@@ -124,6 +143,38 @@ function renderContact(data) {
 }
 
 function renderSidebar(data) {
+  const references = data.sidebar.references;
+  const referencesSection = references
+    ? `
+      <section>
+        <h2 class="section-title">${escapeHtml(references.title)}</h2>
+        <div class="references-list">
+          ${references.items
+            .map(
+              (item) => {
+                const contactValue = item.email || item.contact || "";
+                const contactHtml =
+                  item.email
+                    ? `<a class="reference-contact" href="mailto:${escapeAttribute(item.email)}">${escapeHtml(item.email)}</a>`
+                    : contactValue
+                      ? `<div class="reference-contact">${escapeHtml(contactValue)}</div>`
+                      : "";
+
+                return `
+                <div class="reference-item">
+                  <div class="reference-name">${escapeHtml(item.name || "")}</div>
+                  ${item.role ? `<div class="reference-role">${escapeHtml(item.role)}</div>` : ""}
+                  ${contactHtml}
+                </div>
+              `;
+              },
+            )
+            .join("")}
+        </div>
+      </section>
+    `
+    : "";
+
   return `
     <aside class="side-col">
       <section>
@@ -142,6 +193,8 @@ function renderSidebar(data) {
           ${data.sidebar.languages.chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join("")}
         </div>
       </section>
+
+      ${referencesSection}
     </aside>
   `;
 }
@@ -198,8 +251,8 @@ function renderApp(data, lang) {
 
         <div class="content">
           <div class="main-col">
-            ${renderSection("projects", data.sections.projects)}
             ${renderSection("experience", data.sections.experience)}
+            ${renderSection("projects", data.sections.projects)}
             ${renderSection("education", data.sections.education)}
           </div>
           ${renderSidebar(data)}

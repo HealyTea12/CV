@@ -27,7 +27,7 @@
   },
   "hero": {
     "name": "Tarik Cavalcanti",
-    "subtitle": "Absolvent der Informatik und Mathematischen Physik • Masterstudent",
+    "subtitle": "M.Sc. Computer Science Student",
     "summary": "Masterstudent auf der Suche nach einer Teilzeitstelle in der Softwareentwicklung. Ich entwickle gerne praxisnahe Softwaresysteme, von Webanwendungen und Infrastruktur bis hin zu algorithmischer Optimierung. Meine Erfahrung umfasst Full-Stack-Entwicklung, Monitoring und Tooling für Forschungsinfrastruktur sowie Algorithm Engineering in C++."
   },
   "contact": {
@@ -56,8 +56,15 @@
           "title": "Teddybären Krankenhaus",
           "subtitle": "Full-Stack-Webanwendung zur Generierung synthetischer Teddybären-Röntgenbilder mithilfe modernster Machine-Learning-Modelle",
           "date": "Teamprojekt",
+          "links": [
+            {
+              "label": "GitHub: TeddyBearHospital",
+              "href": "https://github.com/TeddyBearHospital"
+            }
+          ],
           "bullets": [
             "Entwickelte einen End-to-End-Workflow für die Bilderfassung mit einem eigens gebauten Schein-Röntgengerät, das Einreihen von Generierungsaufträgen und die langfristige Dateispeicherung.",
+            "Die Anwendung wurde erfolgreich in Produktion ausgerollt und wird derzeit von der Medizinischen Fakultät der Universität genutzt.",
             "Implementierte den Anwendungstapel mit FastAPI, SvelteKit, ComfyUI, nginx, Docker und Seafile.",
             "Dokumentierte, testete und containerisierte das System und richtete eine robuste CI/CD-Pipeline ein.",
             "Arbeitete im Studententeam an einer produktiv eingesetzten Anwendung mit realem Einsatz."
@@ -67,8 +74,15 @@
           "title": "Weighted Connectivity Augmentation",
           "subtitle": "Algorithm Engineering und Optimierung in C++",
           "date": "Forschung / Implementierung",
+          "links": [
+            {
+              "label": "GitHub: HeiConnect",
+              "href": "https://github.com/HealyTea12/HeiConnect"
+            }
+          ],
           "bullets": [
             "Verbesserte state-of-the-art-Ansätze für das Problem Weighted Connectivity Augmentation durch eine Reduktion auf das Set-Cover-Problem.",
+            "Steigerte die Algorithmusleistung deutlich durch eine effiziente C++-Implementierung und trug zum theoretischen Verständnis des Problems bei.",
             "Implementierte und benchmarkte Reduktionsstrategien zur Leistungsverbesserung.",
             "Fokussierte mich auf eine praxisnahe Implementierung mit effizienteren Speicherzugriffen und Parallelisierung im Vergleich zu bestehenden Lösungen.",
             "Leitete eine Schranke für die Lösungsgüte eines bestehenden Algorithmus her."
@@ -78,9 +92,16 @@
           "title": "Web Novel Scraping",
           "subtitle": "Webanwendung zum Scrapen, Generieren und Bereitstellen von EPUB-Dateien",
           "date": "Nebenprojekt",
+          "links": [
+            {
+              "label": "GitHub: MyWebBooks",
+              "href": "https://github.com/Nokorot/MyWebBooks"
+            }
+          ],
           "bullets": [
             "Entwickelte eine auf Flask und MongoDB basierende Webanwendung, um Webromane von verschiedenen Webseiten zu scrapen und in EPUB-Dateien umzuwandeln.",
-            "Gestaltete die Anwendung so, dass erzeugte Dateien direkt an E-Reader gesendet werden konnten."
+            "Gestaltete die Anwendung so, dass erzeugte Dateien direkt an E-Reader gesendet werden konnten.",
+            "Die Anwendung wird derzeit von einer kleinen Nutzer-Community verwendet."
           ]
         }
       ]
@@ -106,19 +127,22 @@
         {
           "title": "Masterstudium",
           "subtitle": "Derzeit im Masterstudium und auf der Suche nach technischer Teilzeitarbeit",
-          "date": "Aktuell",
+          "startDate": "10/2026",
+          "endDate": "Geplant",
           "bullets": []
         },
         {
           "title": "Bachelor in Informatik",
           "subtitle": "Solide Grundlage in Informatik mit Schwerpunkt auf Algorithm Engineering und Softwareentwicklung",
-          "date": "Fast abgeschlossen (2023-heute)",
+          "startDate": "04/2023",
+          "endDate": "08/2026",
           "bullets": []
         },
         {
           "title": "Bachelor in Mathematischer Physik",
           "subtitle": "Solide Grundlagen in Mathematik und wissenschaftlichem Problemlösen",
-          "date": "Abgeschlossen 2017-2020",
+          "startDate": "2017",
+          "endDate": "2020",
           "bullets": []
         }
       ]
@@ -165,6 +189,26 @@
         "Deutsch (C1)",
         "Portugiesisch (Muttersprache)",
         "Chinesisch (A1)"
+      ]
+    },
+    "references": {
+      "title": "Referenzen",
+      "items": [
+        {
+          "name": "Onno Nerjes",
+          "role": "Systemadministrator, HiWi-Betreuer",
+          "email": "onno.nerjes@urz.uni-heidelberg.de"
+        },
+        {
+          "name": "Prof. Dr. Dominic Kempf",
+          "role": "Professor für Informatik, TeddyBearHospital-Betreuer",
+          "email": "dominic.kempf@iwr.uni-heidelberg.de"
+        },
+        {
+          "name": "Dr. Ernestine Großmann",
+          "role": "Postdoc-Forscherin, Hauptbetreuerin der Bachelorarbeit",
+          "email": "E.Grossmann@informatik.uni-heidelberg.de"
+        }
       ]
     }
   }
