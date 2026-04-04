@@ -41,6 +41,10 @@ function renderItem(item, sectionId) {
     sectionId === "education" && typeof item.startDate === "string" && typeof item.endDate === "string"
       ? `${item.startDate} - ${item.endDate}`
       : item.date;
+  const educationUniversity =
+    sectionId === "education" && typeof item.university === "string" && item.university.trim().length > 0
+      ? `<p class="item-university">${escapeHtml(item.university)}</p>`
+      : "";
   const projectLinks =
     sectionId === "projects" && Array.isArray(item.links) && item.links.length > 0
       ? `
@@ -61,6 +65,7 @@ function renderItem(item, sectionId) {
         <div>
           <h3 class="item-title">${escapeHtml(item.title)}</h3>
           <p class="item-subtitle">${escapeHtml(item.subtitle)}</p>
+          ${educationUniversity}
           ${projectLinks}
         </div>
         <div class="item-date">${escapeHtml(dateText || "")}</div>

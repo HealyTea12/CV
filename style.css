@@ -271,6 +271,13 @@ section + section {
   font-size: 0.96rem;
 }
 
+.item-university {
+  margin: 4px 0 0;
+  color: var(--soft);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
