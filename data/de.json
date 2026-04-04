@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "lang": "de",
+    "title": "Tarik Cavalcanti — Lebenslauf",
+    "description": "Lebenslauf von Tarik Cavalcanti",
+    "alternateLang": "en"
+  },
+  "toolbar": {
+    "brand": "GitHub Pages CV",
+    "links": [
+      {
+        "label": "Projekte",
+        "href": "#projects"
+      },
+      {
+        "label": "Berufserfahrung",
+        "href": "#experience"
+      }
+    ],
+    "languageButtonLabel": "EN",
+    "languageButtonAriaLabel": "Zu Englisch wechseln",
+    "downloadLabel": "PDF herunterladen / drucken",
+    "themeLabels": {
+      "dark": "Dunkler Modus",
+      "light": "Heller Modus"
+    }
+  },
+  "hero": {
+    "name": "Tarik Cavalcanti",
+    "subtitle": "Absolvent der Informatik und Mathematischen Physik • Masterstudent",
+    "summary": "Masterstudent auf der Suche nach einer Teilzeitstelle in der Softwareentwicklung. Ich entwickle gerne praxisnahe Softwaresysteme, von Webanwendungen und Infrastruktur bis hin zu algorithmischer Optimierung. Meine Erfahrung umfasst Full-Stack-Entwicklung, Monitoring und Tooling für Forschungsinfrastruktur sowie Algorithm Engineering in C++."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "location": "Heidelberg, Deutschland",
+    "links": [
+      {
+        "label": "tarikcavalcanti12@gmail.com",
+        "href": "mailto:tarikcavalcanti12@gmail.com"
+      },
+      {
+        "label": "github.com/HealyTea12",
+        "href": "https://github.com/healytea12"
+      },
+      {
+        "label": "linkedin.com/in/tarik-cavalcanti-506b78180",
+        "href": "https://www.linkedin.com/in/tarik-cavalcanti-506b78180/"
+      }
+    ]
+  },
+  "sections": {
+    "projects": {
+      "title": "Ausgewählte Projekte",
+      "items": [
+        {
+          "title": "Teddybären Krankenhaus",
+          "subtitle": "Full-Stack-Webanwendung zur Generierung synthetischer Teddybären-Röntgenbilder mithilfe modernster Machine-Learning-Modelle",
+          "date": "Teamprojekt",
+          "bullets": [
+            "Entwickelte einen End-to-End-Workflow für die Bilderfassung mit einem eigens gebauten Schein-Röntgengerät, das Einreihen von Generierungsaufträgen und die langfristige Dateispeicherung.",
+            "Implementierte den Anwendungstapel mit FastAPI, SvelteKit, ComfyUI, nginx, Docker und Seafile.",
+            "Dokumentierte, testete und containerisierte das System und richtete eine robuste CI/CD-Pipeline ein.",
+            "Arbeitete im Studententeam an einer produktiv eingesetzten Anwendung mit realem Einsatz."
+          ]
+        },
+        {
+          "title": "Weighted Connectivity Augmentation",
+          "subtitle": "Algorithm Engineering und Optimierung in C++",
+          "date": "Forschung / Implementierung",
+          "bullets": [
+            "Verbesserte state-of-the-art-Ansätze für das Problem Weighted Connectivity Augmentation durch eine Reduktion auf das Set-Cover-Problem.",
+            "Implementierte und benchmarkte Reduktionsstrategien zur Leistungsverbesserung.",
+            "Fokussierte mich auf eine praxisnahe Implementierung mit effizienteren Speicherzugriffen und Parallelisierung im Vergleich zu bestehenden Lösungen.",
+            "Leitete eine Schranke für die Lösungsgüte eines bestehenden Algorithmus her."
+          ]
+        },
+        {
+          "title": "Web Novel Scraping",
+          "subtitle": "Webanwendung zum Scrapen, Generieren und Bereitstellen von EPUB-Dateien",
+          "date": "Nebenprojekt",
+          "bullets": [
+            "Entwickelte eine auf Flask und MongoDB basierende Webanwendung, um Webromane von verschiedenen Webseiten zu scrapen und in EPUB-Dateien umzuwandeln.",
+            "Gestaltete die Anwendung so, dass erzeugte Dateien direkt an E-Reader gesendet werden konnten."
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Berufserfahrung",
+      "items": [
+        {
+          "title": "Studentische Hilfskraft (HiWi)",
+          "subtitle": "Universität Heidelberg — Cluster-Monitoring / Infrastrukturunterstützung",
+          "date": "Aktuell",
+          "bullets": [
+            "Unterstützte die Überwachung von Rechenclustern mit Feuchtigkeits- und Temperatursensoren rund um und in Serverracks.",
+            "Erfasste Sensordaten mit Raspberry Pis, verwaltete Sensoren über eine Django-Webanwendung, speicherte Daten in TSDBs, visualisierte Metriken und Alarme in Grafana und übernahm das Deployment mit Ansible.",
+            "Entwickelte und pflegte mehrere Codebasen zur Unterstützung der Cluster-Monitoring-Infrastruktur."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Ausbildung",
+      "items": [
+        {
+          "title": "Masterstudium",
+          "subtitle": "Derzeit im Masterstudium und auf der Suche nach technischer Teilzeitarbeit",
+          "date": "Aktuell",
+          "bullets": []
+        },
+        {
+          "title": "Bachelor in Informatik",
+          "subtitle": "Solide Grundlage in Informatik mit Schwerpunkt auf Algorithm Engineering und Softwareentwicklung",
+          "date": "Fast abgeschlossen (2023-heute)",
+          "bullets": []
+        },
+        {
+          "title": "Bachelor in Mathematischer Physik",
+          "subtitle": "Solide Grundlagen in Mathematik und wissenschaftlichem Problemlösen",
+          "date": "Abgeschlossen 2017-2020",
+          "bullets": []
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "technicalSkills": {
+      "title": "Technische Fähigkeiten",
+      "groups": [
+        {
+          "label": "Programmiersprachen",
+          "chips": ["C++", "Python", "TypeScript/JavaScript", "HTML/CSS"]
+        },
+        {
+          "label": "Frameworks & Werkzeuge",
+          "chips": [
+            "FastAPI",
+            "Flask",
+            "Django",
+            "SvelteKit",
+            "Docker",
+            "nginx",
+            "SQL/MongoDB",
+            "Grafana",
+            "Linux",
+            "Git",
+            "Ansible"
+          ]
+        },
+        {
+          "label": "Schwerpunkte",
+          "chips": ["Full-Stack-Entwicklung", "Algorithmen", "Optimierung"]
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Höhepunkte",
+      "text": "Sicher im Wechsel zwischen theorielastiger technischer Arbeit und praktischer Umsetzung. Besonders interessiert an sauberem Systemdesign, effizienten Algorithmen und Projekten mit echtem Mehrwert."
+    },
+    "languages": {
+      "title": "Sprachen",
+      "chips": [
+        "Englisch (C2)",
+        "Deutsch (C1)",
+        "Portugiesisch (Muttersprache)",
+        "Chinesisch (A1)"
+      ]
+    }
+  }
+}

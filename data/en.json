@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "lang": "en",
+    "title": "Tarik Cavalcanti — CV",
+    "description": "CV of Tarik Cavalcanti",
+    "alternateLang": "de"
+  },
+  "toolbar": {
+    "brand": "GitHub Pages CV",
+    "links": [
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      }
+    ],
+    "languageButtonLabel": "DE",
+    "languageButtonAriaLabel": "Switch to German",
+    "downloadLabel": "Download / Print PDF",
+    "themeLabels": {
+      "dark": "Dark mode",
+      "light": "Light mode"
+    }
+  },
+  "hero": {
+    "name": "Tarik Cavalcanti",
+    "subtitle": "Computer Science & Mathematical Physics Graduate • Master’s Student",
+    "summary": "Master’s student seeking part-time software engineering work. I enjoy building practical software systems, from web applications and infrastructure to algorithmic optimization. My experience spans full-stack development, monitoring and tooling for research infrastructure, and algorithm engineering in C++."
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Heidelberg, Germany",
+    "links": [
+      {
+        "label": "tarikcavalcanti12@gmail.com",
+        "href": "mailto:tarikcavalcanti12@gmail.com"
+      },
+      {
+        "label": "github.com/HealyTea12",
+        "href": "https://github.com/healytea12"
+      },
+      {
+        "label": "linkedin.com/in/tarik-cavalcanti-506b78180",
+        "href": "https://www.linkedin.com/in/tarik-cavalcanti-506b78180/"
+      }
+    ]
+  },
+  "sections": {
+    "projects": {
+      "title": "Selected Projects",
+      "items": [
+        {
+          "title": "Teddybären Krankenhaus",
+          "subtitle": "Full-stack web application for generating synthetic teddy-bear X-ray images using state-of-the-art machine learning models",
+          "date": "Team Project",
+          "bullets": [
+            "Built an end-to-end workflow for image capture with a custom fake X-ray machine, generation task queuing, and long-term file storage.",
+            "Developed the application stack with FastAPI, SvelteKit, ComfyUI, nginx, Docker, and Seafile.",
+            "Documented, tested, and containerized the system, and set up a robust CI/CD pipeline.",
+            "Collaborated in a student team to deliver a production-deployed application used in real operations."
+          ]
+        },
+        {
+          "title": "Weighted Connectivity Augmentation",
+          "subtitle": "Algorithm engineering and optimization in C++",
+          "date": "Research / Implementation",
+          "bullets": [
+            "Improved on state-of-the-art approaches for the Weighted Connectivity Augmentation problem using a reduction to the Set Cover problem.",
+            "Implemented and benchmarked reduction strategies to improve performance.",
+            "Focused on practical implementation, leveraging more efficient memory access patterns and parallelization compared with existing implementations.",
+            "Derived a solution-quality bound for an existing algorithm."
+          ]
+        },
+        {
+          "title": "Web Novel Scraping",
+          "subtitle": "Web application for scraping, generating, and delivering EPUB files",
+          "date": "Side Project",
+          "bullets": [
+            "Built a Flask- and MongoDB-based web application to scrape web novels from multiple websites and compile them into EPUB format.",
+            "Designed the application so generated files could be sent directly to e-readers."
+          ]
+        }
+      ]
+    },
+    "experience": {
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "Student Research Assistant (HiWi)",
+          "subtitle": "Heidelberg University — Cluster Monitoring / Infrastructure Support",
+          "date": "Current",
+          "bullets": [
+            "Helped monitor computing-cluster environments using humidity and temperature sensors placed around and inside server racks.",
+            "Collected sensor readings with Raspberry Pis; managed sensors through a Django web application; stored data in TSDBs; visualized metrics and alerts in Grafana; and handled deployment with Ansible.",
+            "Developed and maintained multiple codebases supporting cluster-monitoring infrastructure."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "title": "Master’s Studies",
+          "subtitle": "Currently pursuing a master’s degree while seeking part-time technical work",
+          "date": "Current",
+          "bullets": []
+        },
+        {
+          "title": "Bachelor’s Degree in Computer Science",
+          "subtitle": "Strong foundation in computer science, with a focus on algorithm engineering and software development",
+          "date": "Near Completion (2023-Present)",
+          "bullets": []
+        },
+        {
+          "title": "Bachelor’s Degree in Mathematical Physics",
+          "subtitle": "Strong foundations in mathematics and scientific problem-solving",
+          "date": "Completed 2017-2020",
+          "bullets": []
+        }
+      ]
+    }
+  },
+  "sidebar": {
+    "technicalSkills": {
+      "title": "Technical Skills",
+      "groups": [
+        {
+          "label": "Languages",
+          "chips": ["C++", "Python", "TypeScript/JavaScript", "HTML/CSS"]
+        },
+        {
+          "label": "Frameworks & Tools",
+          "chips": [
+            "FastAPI",
+            "Flask",
+            "Django",
+            "SvelteKit",
+            "Docker",
+            "nginx",
+            "SQL/MongoDB",
+            "Grafana",
+            "Linux",
+            "Git",
+            "Ansible"
+          ]
+        },
+        {
+          "label": "Focus Areas",
+          "chips": ["Full-Stack Development", "Algorithms", "Optimization"]
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Highlights",
+      "text": "Comfortable moving between theory-heavy technical work and practical implementation. Particularly interested in clean system design, efficient algorithms, and projects that have a real impact."
+    },
+    "languages": {
+      "title": "Languages",
+      "chips": [
+        "English (C2)",
+        "German (C1)",
+        "Portuguese (Native)",
+        "Chinese (A1)"
+      ]
+    }
+  }
+}
